@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -107,7 +108,8 @@ p {
 }
 
 .col-3 img {
-    width: 450px;
+    width: 320px;
+    padding: 20px;
 }
 
 .small-container {
@@ -126,7 +128,8 @@ p {
 }
 
 .col-4 img {
-    width: 450px;
+    width: 250px;
+    padding: 10px;
 }
 
 .title {
