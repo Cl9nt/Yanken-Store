@@ -400,6 +400,71 @@ input:focus {
     cursor: pointer;
 }
 
+/************** Cart Details Styles *******************/
+
+.cart-page {
+    margin: 80px 200px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #7de779;
+    font-weight: normal;
+    border-radius: 5px;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color: #57b154;
+    font-size: 12px;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-info img {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 3px solid #7de779;
+    width: 100%;
+    max-width: 520px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
 /************** Media Query 800px Screens *******************/
 
 @media only screen and (max-width: 800px) {
@@ -428,6 +493,10 @@ input:focus {
         display: block;
         cursor: pointer;
     }
+
+    .cart-page {
+        margin: 80px 20px;
+    }
 }
 
 /************** Media Query 600px Screens *******************/
@@ -452,5 +521,13 @@ input:focus {
     .single-product h1 {
         font-size: 26px;
         line-height: 32px;
+    }
+
+    .cart-page {
+        margin: 80px 20px;
+    }
+
+    .cart-info p {
+        display: none;
     }
 }

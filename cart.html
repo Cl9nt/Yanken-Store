@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanken Store</title>
+
+    <!--
+        Google Fonts
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!--
+        Font Awesome Lik
+    -->
+
+    <script src="https://kit.fontawesome.com/4f9cc66ded.js" crossorigin="anonymous"></script>
+
+    <!--
+        Link Styles
+    -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!------------- Header Section ------------->
+    
+    <div class="header" id="home">
+        <div class="container">
+            <div class="navbar">
+
+                <!--
+                    Navbar Logo
+                -->
+
+                <div class="logo">
+                    <img src="./images/logo-dark.ico" alt="" width="125px" height="80px">
+                </div>
+                <nav>
+                    <ul id="menuItem">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="./products.html">Product</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                </nav>
+                <span class="material-symbols-outlined"width="30px" height="30px">
+                    shopping_cart
+                </span><!-- Cart Icon-->
+                <img src="./images/menuicon.png" alt=""width="30px" height="30px" class="menu-icon" onclick="menutoggle()"><!--Menu Img -->
+
+            </div>
+        
+        </div>
+    </div>
+
+    <!------------ Cart Details Categories --------->
+
+    <div class="samll-container cart-page">
+
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Sub-Total</th>
+            </tr>
+            <tr>
+                <td>
+                    
+                    <div class="cart-info">
+                        <img src="./images/HDD.jpg" alt="IBM">
+                        <div>
+                            <p>Toshiba HDD Hard Drive</p>
+                            <small>Price: $19.99</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$19.99</td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    <div class="cart-info">
+                        <img src="./images/Mouse.jpg" alt="Mouse">
+                        <div>
+                            <p>Wireless Optical Mouse</p>
+                            <small>Price: $10.99</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$10.99</td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    <div class="cart-info">
+                        <img src="./images/Ram.jpg" alt="Ram">
+                        <div>
+                            <p>DDR3 4GB Ram Disk</p>
+                            <small>Price: $15.99</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$15.99</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+
+            <table>
+                <tr>
+                    <td>Sun-Total</td>
+                    <td>$200.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$10.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$210.00</td>
+                </tr>
+            </table>
+            
+        </div>
+
+    </div>
+
+    <!------------ Footer --------->
+
+    <div class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Subscribe Now</h3>
+                    <p>Get news on new merchendase and products.</p>
+                    <div class="app-logo">
+                        <img src="/images/GPlay.jpg">
+                        <img src="/images/AppStore.jpg">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="/images/logo-dark.ico">
+                    <p>Our Purpose is to offer Secure and Dependable Software and Hardware Components.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Cuopons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Reddit</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - muthunguclintn </p>
+        </div>
+    </div>
+
+    <script>
+
+        var MenuItem = document.getElementById("menuItem");
+        MenuItem.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if(MenuItem.style.maxHeight == "0px") {
+                MenuItem.style.maxHeight = "200px";
+            }
+            else {
+                MenuItem.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
